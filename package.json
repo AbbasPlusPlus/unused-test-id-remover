@@ -1,5 +1,6 @@
 {
   "name": "unused-test-id-remover",
+  "publisher": "MohammadAbbas",
   "displayName": "unused test id remover",
   "description": "This extension removes unused data-testid fields from react code to keep your code clean.",
   "version": "0.0.1",
@@ -10,7 +11,7 @@
     "Other"
   ],
   "activationEvents": [],
-  "main": "./extension.js",
+  "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
@@ -22,7 +23,12 @@
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
-    "test": "vscode-test"
+    "test": "vscode-test",
+    "vscode:prepublish": "npm run package",
+    "webpack": "webpack --mode development",
+    "webpack-dev": "webpack --mode development --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "test-compile": "tsc -p ./"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.6",
@@ -32,7 +38,9 @@
     "@vscode/test-electron": "^2.3.8",
     "eslint": "^8.55.0",
     "prettier": "^3.1.0",
-    "typescript": "^5.3.2"
+    "typescript": "^5.3.2",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
   },
   "dependencies": {
     "@babel/core": "^7.23.5",
@@ -40,8 +48,8 @@
     "@babel/traverse": "^7.23.5"
   },
   "repository": {
-  "type": "git",
-  "url": "https://github.com/AbbasPlusPlus/unused-test-id-remover.git"
-},
-"license": "MIT"  
+    "type": "git",
+    "url": "https://github.com/AbbasPlusPlus/unused-test-id-remover.git"
+  },
+  "license": "MIT"
 }
