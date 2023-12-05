@@ -38,5 +38,10 @@
     "@babel/core": "^7.23.5",
     "@babel/parser": "^7.23.5",
     "@babel/traverse": "^7.23.5"
-  }
+  },
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/AbbasPlusPlus/unused-test-id-remover.git"
+},
+"license": "MIT"  
 }
