@@ -3,7 +3,7 @@
   "publisher": "MohammadAbbas",
   "displayName": "unused test id remover",
   "description": "This extension removes unused data-testid fields from react code to keep your code clean.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.84.0"
   },

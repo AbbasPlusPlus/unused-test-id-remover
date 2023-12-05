@@ -26,7 +26,7 @@ To use the extension, follow these steps:
 
 1. Open your React project in Visual Studio Code.
 2. Open the Command Palette (`Ctrl+Shift+P` on Windows/Linux, `Cmd+Shift+P` on macOS).
-3. Type "Remove Unused Test IDs" and select the command.
+3. Type "remove unused test ids" and select the command.
 4. The extension will scan your project and remove any unused `data-testid` attributes.
 
 ## Commands
