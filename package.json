@@ -1,0 +1,42 @@
+{
+  "name": "unused-test-id-remover",
+  "displayName": "unused test id remover",
+  "description": "This extension removes unused data-testid fields from react code to keep your code clean.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "unused-test-id-remover.removeUnusedTestIds",
+        "title": "remove unused test ids"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@types/vscode": "^1.84.0",
+    "@vscode/test-cli": "^0.0.4",
+    "@vscode/test-electron": "^2.3.8",
+    "eslint": "^8.55.0",
+    "prettier": "^3.1.0",
+    "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "@babel/core": "^7.23.5",
+    "@babel/parser": "^7.23.5",
+    "@babel/traverse": "^7.23.5"
+  }
+}
